@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <h2>Dashboard</h2>
+      <h2>#Main#DiaryOfTheDay</h2>
       <p>
         Next.js is a popular React framework for building fast, server-rendered
         web applications. It offers features like static site generation (SSG),
@@ -13,11 +13,11 @@ export default function Home() {
 
       <div className="flex justify-center my-8">
         <Link href="/blogs">
-          <button className="btn-primary">Read Blogs</button>
+          <button className="btn-primary">Read Diaries</button>
         </Link>
       </div>
 
-      <h2>New Updates</h2>
+      <h2>New Diaries</h2>
 
       <div className="card">
         <h3>New member of the web dev team...</h3>
