@@ -1,10 +1,10 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 
 //components
 import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const space_Mono = Space_Mono({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "next-blogs",
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={space_Mono.className}>
         <Navbar />
         {children}
       </body>
