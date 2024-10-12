@@ -13,7 +13,6 @@ export default async function Home() {
           <button className="btn-primary">Read Diaries</button>
         </Link>
       </div>
-
       <h2>New Diaries</h2>
       <DairiestList />
 

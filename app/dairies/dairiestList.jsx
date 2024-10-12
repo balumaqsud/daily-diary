@@ -14,12 +14,12 @@ export default async function DairiestList() {
 
     //fetching data from collection
     const dairies = await db.collection("dairies").find({}).toArray();
-    console.log("dairies: ", dairies);
+
     return (
       <>
         {dairies.map((dairy) => (
-          <Link href={`/dairies/${dairy._id}`}>
-            <div className="card my-5" key={dairy._id}>
+          <Link key={dairy._id} href={`/dairies/${dairy._id}`}>
+            <div className="card my-5">
               <h3>{dairy.title}</h3>
               <p>{dairy.body.slice(0, 200)}... </p>
               <div className={`pill ${dairy.priority}`}>{dairy.priority}</div>
