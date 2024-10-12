@@ -1,11 +1,18 @@
 import React from "react";
+import DairiestList from "./dairiestList";
 
-const Diary = () => {
+export default function Dairy() {
   return (
     <main>
-      <h3>Diaries ...</h3>
+      <nav>
+        <div>
+          <h2>Diaries</h2>
+          <p>
+            <small>Currently open dairies</small>
+          </p>
+        </div>
+      </nav>
+      <DairiestList />
     </main>
   );
-};
-
-export default Diary;
+}

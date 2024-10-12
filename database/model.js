@@ -2,10 +2,6 @@ import mongoose from "mongoose";
 
 const diarySchema = new mongoose.Schema(
   {
-    id: {
-      type: String,
-      required: true,
-    },
     title: {
       type: String,
       reqired: true,
