@@ -8,6 +8,7 @@ export const revalidate = 30;
 
 export default async function DairiestList() {
   try {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     //consts
     const client = await clientPromise;
     const db = client.db("dairies");

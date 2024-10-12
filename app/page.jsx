@@ -1,6 +1,8 @@
 import Link from "next/link";
 import DairiestList from "./dairies/dairiestList";
 import RandomDairy from "./dairies/randomDairy";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 // homepage
 export default async function Home() {
@@ -14,7 +16,9 @@ export default async function Home() {
         </Link>
       </div>
       <h2>New Diaries</h2>
-      <DairiestList />
+      <Suspense fallback={<Loading />}>
+        <DairiestList />
+      </Suspense>
 
       <Link href={"https://github.com/balumaqsud"}>
         <h2>@balumaqsud</h2>
