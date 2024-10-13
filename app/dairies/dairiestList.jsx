@@ -27,7 +27,6 @@ export default async function DairiestList() {
             </div>
           </Link>
         ))}
-        x
         {dairies.length === 0 && (
           <p className="text-center">there are no dairies yet!</p>
         )}
